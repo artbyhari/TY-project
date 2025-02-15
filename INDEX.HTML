@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Recommendation Engine</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="title-container">
+            <h1>Project Recommendation Engine</h1>
+        </div>
+        <div class="buttons">
+            <button id="theme-toggle" title="Toggle Theme"><i class="fas fa-sun"></i></button>
+            <button id="search-button" title="Search Projects"><i class="fas fa-search"></i></button>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <p>Welcome to the Project Recommendation Engine. Discover your ideal project match in seconds. Our AI-powered system analyzes your skills, interests, and goals to suggest personalized project recommendations. Simply input your preferences, and we'll provide a curated list of projects that align perfectly with your aspirations.</p>
+
+        <div class="form-container">
+            <h2>User Requirements</h2>
+            <form action="/submit" method="post">
+                <label for="budget">What's your field of project?</label>
+                <select id="budget" name="budget" required>
+                    <option value="" disabled selected>Select your domain of project</option>
+                    <option value="web-development">Web Development</option>
+                    <option value="mobile-app-development">Mobile App Development</option>
+                    <option value="data-science">Data Science</option>
+                    <option value="machine-learning">Machine Learning</option>
+                    <option value="artificial-intelligence">Artificial Intelligence</option>
+                    <option value="game-development">Game Development</option>
+                    <option value="software-engineering">Software Engineering</option>
+                </select>
+
+                <label for="tasks">Your tasks/use cases</label>
+                <select id="tasks" name="tasks" required>
+                    <option value="" disabled selected>Select project type</option>
+                    <option value="operational">Operational: Improves existing processes or systems.</option>
+                    <option value="strategic">Strategic: Aligns with long-term organizational goals.</option>
+                    <option value="developmental">Developmental: Creates new products or services.</option>
+                    <option value="corrective">Corrective: Addresses specific problems or issues.</option>
+                </select>
+
+                <label for="softwares">Select difficulty</label>
+                <select id="softwares" name="softwares">
+                    <option value="" disabled selected>Select difficulty</option>
+                    <option value="beginner">Beginner</option>
+                    <option value="intermediate">Intermediate</option>
+                    <option value="advanced">Advanced</option>
+                </select>
+
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </main>
+
+    <footer class="footer">
+    </footer>
+</body>
+
+</html>
